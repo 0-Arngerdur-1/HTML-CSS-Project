@@ -1,0 +1,277 @@
+:root {
+	--background: #161853;
+	--blue: #292C6D;
+	--white: #FAEDF0;
+	--red: #EC255A;
+	--header-font-color: #00ACED; 
+	--header-font: 'Staatliches', cursive;
+	--body-font: 'Archivo', sans-serif;
+	--header-font-2: 'Epilogue', sans-serif; 
+	--section-font:  'JetBrains Mono', monospace;
+	--card-font: 'Rowdies', cursive;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: var(--background);
+	font-family: var(--body-font);
+	color: var(--white);
+	font-size: 1.2rem;
+
+}
+
+.logo {
+	width: 50%;
+	min-width: 115px;
+	max-width: 200px;
+	height: auto;
+	
+}
+
+header {
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	row-gap: 25px;
+	padding: 2rem 2rem;
+}
+
+button {
+	background-color: var(--blue);
+	color: var(--white);
+	border: none;
+	padding: 1px 1.5px;
+	margin: 0px 10px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50px;
+	width: 84px;
+	height: 28px;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+}
+
+h2 {
+	font-family: var(--section-font);
+	font-size: 40px;
+}
+
+h3 {
+	font-size: 28px;
+}
+
+p {
+	font-family: var(--body-font);
+	font-size: 24px;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;
+}
+
+.btn {
+  height: 28px;
+  cursor: pointer;
+  background: var(--blue);
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: #4F95DA;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	font-family: var(--header-font);
+	color: var(--header-font-color);
+	font-size: 36px;
+	padding: 2rem 2rem;
+}
+
+.hero-paragraph {
+	color: var(--white);
+	font-family: var(--header-font-2);
+	font-size: 24px;
+
+}
+
+.hero-image {
+	width: 95%;
+	min-width: 115px;
+	max-width: 500px;
+	height: auto;
+	position:absolute;
+	left: 1%;
+	top: 65%;
+	z-index: -1;
+}
+
+.about {
+	background-color:var(--red);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 18rem;
+	padding: 2rem 2rem;
+	row-gap: 42px;
+	column-gap: 30%;
+
+}
+
+.about-image {
+	width: 30%;
+	height: auto;
+	min-width: 160px;
+	max-width: 300px;
+}
+
+.plans {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 2rem;
+}
+
+.cards {
+
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+
+
+}
+
+.card {
+	font-family: var(--card-font);
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	text-align: center;
+	align-items: center;
+	background-color: var(--blue);
+	width: 273px;
+	height: auto;
+	padding: 2rem 0rem;
+	margin: 2rem 2rem;
+	border-radius: 25px;
+	
+}
+
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-image {
+	width: 60%;
+}
+
+.card-price {
+	font-family: var(--card-font);
+	font-size: 25px;
+}
+
+.card-button {
+	color: var(--white);
+	width: 158px;
+	height: 42px;
+	background-color: var(--red);
+	padding: 1px 1.5px;
+	margin: 0px 0px;
+}
+
+.contact {
+	flex-direction: column;
+	margin: 20rem 2rem;
+}
+
+form {
+	display: flex;
+	flex-direction:column;
+}
+
+input {
+	font-family:var(--body-font);
+	font-size: 20px;
+
+}
+input[type=text], select {
+	width: 90%;
+	padding: 10px 20px;
+	margin: 6px 0px;
+	display: inline-block;
+	background-color: #c4c4c4;
+	box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 40%;
+  background-color: var(--red);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+
+@media (min-width: 1050px) {
+	header { 
+		justify-content: space-between;
+		flex-direction: row;
+	}
+
+	.about {
+ 
+		justify-content: space-between;
+		flex-direction: row;
+		padding: 6rem 6rem;
+	}
+
+	main {
+		justify-content: space-between;
+		margin: 0 4%;
+	}
+
+	.hero-image {
+		position:static;
+	}
+
+	.about-image {
+		width: 100%;
+	}
+
+	.plans {
+
+		justify-content: space-between;
+	}
+
+
+}
+
